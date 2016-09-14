@@ -16,7 +16,7 @@ import dk.itu.mario.engine.sprites.Mushroom;
 import dk.itu.mario.engine.sprites.Particle;
 import dk.itu.mario.engine.sprites.Sprite;
 import dk.itu.mario.engine.util.FileHandler;
-
+import dk.itu.mario.entries.MyLevelGenerator;
 import dk.itu.mario.engine.Art;
 import dk.itu.mario.engine.BgRenderer;
 import dk.itu.mario.engine.DataRecorder;
@@ -57,7 +57,8 @@ import dk.itu.mario.res.ResourcesManager;
 
 		        if(level==null)
 		        	if(isCustom){
-		        		CustomizedLevelGenerator clg = new CustomizedLevelGenerator();
+		        		//CustomizedLevelGenerator clg = new CustomizedLevelGenerator();
+		        		MyLevelGenerator clg = new MyLevelGenerator();
 		        		GamePlay gp = new GamePlay();
 		        		gp = gp.read("player.txt");
 		        		currentLevel = (Level)clg.generateLevel(gp);
