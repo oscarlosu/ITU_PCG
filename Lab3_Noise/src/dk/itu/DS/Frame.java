@@ -52,7 +52,7 @@ public class Frame extends JFrame{
 	 */
 	public static void main(String[] args){
 		int seed = new Random().nextInt();
-		seed = -838066981;
+		//seed = -838066981;
 		System.out.println("Seed: " + seed);
 		int tiles = 3;
 		System.out.println("Tiles: " + tiles + "x" + tiles);
